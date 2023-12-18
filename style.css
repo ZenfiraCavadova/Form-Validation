@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+:is(ul, ol) li {
+  list-style: none;
+}
+
+:is(*) a {
+  text-decoration: none;
+}
+main {
+  width: 100%;
+  height: 100vh;
+}
+body {
+  background: #4568dc;
+  background: -webkit-linear-gradient(to right, #b06ab3, #4568dc);
+  background: linear-gradient(to right, #b06ab3, #4568dc);
+}
+main,
+.rgstr-frm,
+.input-control,
+.rgstr-frm .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rgstr-frm {
+  width: 400px;
+  /* height: 650px; */
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+}
+.rgstr-frm .form .input-control:nth-child(2),
+.rgstr-frm .form .input-control:nth-child(3),
+.rgstr-frm .form .input-control:nth-child(4),
+.rgstr-frm .form .input-control:nth-child(5),
+.rgstr-frm .form .input-control:nth-child(6),
+.rgstr-frm .form .input-control:nth-child(7) {
+  align-items: start;
+}
+.rgstr-frm .form label {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.rgstr-frm .form input {
+  width: 366px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.form .rgstr-header {
+  width: 180px;
+  height: 24.5px;
+  flex-shrink: 0;
+  color: #0d0d0d;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 20px;
+}
+
+.form .rgstr-header::after {
+  content: "";
+  width: 400px;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 15px 0;
+  position: absolute;
+  top: 30px;
+}
+
+.rgstr-frm .form .btn {
+  width: 366px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #f22b2b;
+  background: #fe3737;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-radius: 5px;
+  border: 1px solid #f22b2b;
+  background: #fff;
+}
+
+.input-control .error {
+  color: #f22b2b;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
